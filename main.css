@@ -13,9 +13,23 @@ header div{
     flex-wrap: nowrap;
     height: 100%;
     justify-content: right;
-    animation-duration: 3s;
-    animation-name: ;
+
+}
+
+header{
+    animation-duration: 2s;
+    animation-name: correr;
+    animation-iteration-count: infinite;
     
+}
+
+@keyframes correr{
+    0% { margin-left: 0px}
+    30% { margin-left: -15px;}
+    70% { margin-left: -21px;}
+    100% { margin-left: 0px;}
+
+
 }
 
 
