@@ -13,8 +13,23 @@ header div{
     flex-wrap: nowrap;
     height: 100%;
     justify-content: right;
+
+}
+
+header{
+    animation-duration: 2s;
+    animation-name: correr;
+    animation-iteration-count: infinite;
     
-    
+}
+
+@keyframes correr{
+    0% { margin-left: 0px}
+    30% { margin-left: -15px;}
+    70% { margin-left: -21px;}
+    100% { margin-left: 0px;}
+
+
 }
 
 
@@ -70,7 +85,7 @@ header div img{
  }
  nav li{
     display: inline-flexbox;
-    
+    transition: all .3s;
     
 }
 
@@ -97,6 +112,7 @@ header div img{
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      font-weight: 300;
      color: #13031C;
+     transition: all .2s;
      
  }
  footer{
@@ -211,10 +227,12 @@ header div img{
     nav { 
         display: flex;
         justify-content: space-evenly;
+        
     }
+
+   
     .navpages li{
         display: inline;
-        
     }
     .contactenos{
         margin-left: 250px;
@@ -223,7 +241,7 @@ header div img{
     .productos img{
         height: 200px;
         width: 300px;
-   
+        transition: all .3s;
     }
 
     .bodyhome{
@@ -237,9 +255,11 @@ header div img{
     }
     .textoHistoria{
         grid-area: texto;
+
     }
     .video{
         grid-area: video;
+        transition: all .3s;
     }
     .navhome{
         grid-area: menu;
@@ -266,5 +286,45 @@ header div img{
     }
     table{
         margin-left: 250px;
+    }
+    .botonTrabaja{
+        transition: all .3s;
+    }
+    .botonTrabaja:hover{
+       
+        transform: scale(2, 4);
+        font-size: 20px;
+        background-color: #28d5b0;
+        height: 25px;
+        width: 35px;
+    }
+    
+    nav li:hover{
+        transform: scale(1.5, 2);
+        height: 25px;
+        width: 40px;
+    }
+
+    .navpages li:hover{
+        transform: scale(1.5, 2);
+        height: 25px;
+        width: 40px;
+    }
+    .productos img:hover{
+        transform: scale(2, 2.5);
+
+        transform: translate(50px 10px);
+
+    }
+    .textoHistoria:hover{ 
+        transform: scale(1, 1.5);
+        background-color: #13031C;
+        color: #030d16;
+
+
+
+    }
+    .video:hover{
+        transform: scale(1, 1.2);
     }
 }
